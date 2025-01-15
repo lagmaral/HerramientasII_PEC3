@@ -1,0 +1,22 @@
+<div class="lg:w-3/5 mb-4 order-1 lg:order-2 mx-[2lvw] lg:ml-[10lvw] text-600 mt-[2lvw] lg:mt-0">
+    <!-- Sección de Galería -->
+    <section class="border-2 border-bg rounded text-600">
+        <h2 class="mb-3 text-xl font-bold bg-header-bg pl-2">Galería de Imágenes</h2>
+        <div class="p-[2lvw]">
+            <img src='{{ galleryImageSrc }}' alt="" class="w-full h-auto rounded shadow">
+        </div>
+    </section>
+
+    <!-- Sección de Video -->
+    <section class="my-2 border-2 border-bg rounded text-600">
+        <h2 class="mb-3 text-xl font-bold bg-header-bg pl-2">Video Destacado</h2>
+        <div class="relative w-full pt-[56.25%] mx-[2lv] my-[2lv]">
+            <iframe
+              src='{{ videoSrc }}'
+              title='Enlace a video de Youtube'
+              allowFullScreen
+              class="absolute p-[2lvw] top-0 left-0 w-full h-full"
+            ></iframe>
+          </div>
+    </section>
+</div>

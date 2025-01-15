@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="utf-8"> <!-- Define el conjunto de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Para que la página sea responsiva -->
+    <title>Noamatech Convention - Sobre Nosotros</title> <!-- Título de la página -->
+
+
+
+    <!-- Enlace a la hoja de estilos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlace a archivo principal de estilos (SCSS compilado) -->
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <link rel="stylesheet" type="text/css" href="./assets/styles/base.scss"><!-- do not remove this line! -->
+</head>
+<body>
+
+    <include src="./views/header.html"></include>
+
+    <main class="px-[10lvw] py-[2lvh]">
+        <!-- Título principal de la sección -->
+        <h1 class="text-center text-4xl text-form-600 font-bold  py-[4lvh]">Speakers</h1>
+
+
+        <div class="speakers-container__grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+          <!-- Tarjeta 1 -->
+          <include src="./views/speaker-card.html" locals='{
+            "imageSrc": "./assets/images/speaker01.png",
+            "name": "Peter Techman",
+            "description": "La ciberseguridad en redes protege la transmisión de información frente a ataques como la interceptación o el espionaje."
+          }'></include>
+          <!-- Tarjeta 2 -->
+          <include src="./views/speaker-card.html" locals='{
+            "imageSrc": "./assets/images/speaker02.png",
+            "name": "Lucas Byte",
+            "description": "La criptografía moderna es esencial para proteger datos en reposo y en tránsito mediante el uso de cifrados avanzados."
+          }'></include>
+
+          <!-- Tarjeta 3 -->
+          <include src="./views/speaker-card.html" locals='{
+            "imageSrc": "./assets/images/speaker03.png",
+            "name": "Sofía Codewell",
+            "description": "El análisis forense digital ayuda a identificar y rastrear amenazas después de un incidente de seguridad."
+          }'></include>
+          <!-- Tarjeta 4 -->
+          <include src="./views/speaker-card.html" locals='{
+            "imageSrc": "./assets/images/speaker04.png",
+            "name": "Diego Innovar",
+            "description": "La seguridad en la nube garantiza que tus datos estén protegidos, incluso cuando no están en tus dispositivos locales."
+          }'></include>
+           <!-- Tarjeta 5 -->
+          <include src="./views/speaker-card.html" locals='{
+            "imageSrc": "./assets/images/speaker06.png",
+            "name": "Michael Data",
+            "description": "Los sistemas de autenticación multifactor son una barrera efectiva contra accesos no autorizados."
+          }'></include>
+           <!-- Tarjeta 6 -->
+          <include src="./views/speaker-card.html" locals='{
+            "imageSrc": "./assets/images/ponente.png",
+            "name": "Satoshi",
+            "description": "La concienciación en ciberseguridad ayuda a prevenir ataques como el phishing y la ingeniería social."
+          }'></include>
+        </div>
+      </main>
+
+
+
+
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+@use "sass:color";
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+$font-family-serif: "Georgia", "Times New Roman", serif;
+
+$uoc-corporate: #000078;
+$uoc-masterbrand: #73edff;
+$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
+
+$mqMinWidth: 420px;
+
+$font-family-sans-serif: -apple-system, blinkmacsystemfont, "Segoe UI", roboto,
+  "Helvetica Neue", arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+$font-family-secundary: "Lora", serif;
+$font-family-serif: "Georgia", "Times New Roman", serif;
+$header-footer-text-color: #333; /* Lavanda OKLCH */
+$header-footer-background-color: #ac7ef7; /* Original en hexadecimal */
+$header-footer-font-color: #240656;      /* Original en hexadecimal */
+$header-footer-text-display-p3: color(display-p3 0.674 0.494 0.969); /* Lavanda Display-P3 */
+$header-footer-background-display-p3: color(display-p3 0.674 0.494 0.969); /* Lavanda Display-P3 */
+$header-footer-font-color-display-p3: color(display-p3 0.0824 0.0235 0.3373);      /* Morado oscuro Display-P3 */
+$header-footer-text-oklch: oklch(76.8% 0.354 243deg / 100%); /* Lavanda OKLCH */
+$header-footer-background-oklch: oklch(76.8% 0.354 243deg / 100%); /* Lavanda OKLCH */
+$header-footer-font-color-oklch: oklch(16.7% 0.16 292.2deg);      /* Morado oscuro OKLCH */
+$header-footer-over-font-color: #ac7ef7;
+$header-font-color: #ac7ef7;
+$footer-font-color: #ac7ef7;
+$white-color: #fff;
+$border-color: #ddd;
+$highlightned-background-color: #f0f8ff;

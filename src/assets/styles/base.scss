@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'variables';
+
+@layer components {
+
+  .btn-primary {
+    @apply bg-header-bg text-white font-bold py-2 px-4 rounded mb-2 w-full;
+  }
+
+  .speaker-card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden flex flex-col w-full max-w-[300px] border border-solid border-gray-300;
+  }
+
+}
+
+.bg-header-bg{
+  @supports (color: oklch(0.6 0.2 90)) {
+    background-color: $header-footer-background-oklch;  /* Aplica un color moderno basado en OKLCH */
+  }
+
+  /* Usar Display-P3 si OKLCH no está disponible, pero Display-P3 sí lo está */
+  @supports (color: color(display-p3 0.95 0.95 0.98)) {
+    @supports not (color: oklch(0.6 0.2 90)) {
+      background-color: $header-footer-background-display-p3;  /* Aplica un color en el espacio Display-P3 */
+    }
+  }
+
+  /* Fallback para navegadores que no soportan OKLCH ni Display-P3 */
+  @supports not (color: color(display-p3 0.95 0.95 0.98)) {
+    @supports not (color: oklch(0.6 0.2 90)) {
+      background-color: $header-footer-font-color;  /* Aplica un color de reserva convencional */
+    }
+  }
+}
+
+.border-bg{
+
+  @supports (color: oklch(0.6 0.2 90)) {
+    border-color: $header-footer-background-oklch;  /* Aplica un color moderno basado en OKLCH */
+  }
+
+  /* Usar Display-P3 si OKLCH no está disponible, pero Display-P3 sí lo está */
+  @supports (color: color(display-p3 0.95 0.95 0.98)) {
+    @supports not (color: oklch(0.6 0.2 90)) {
+      border-color: $header-footer-background-display-p3;  /* Aplica un color en el espacio Display-P3 */
+    }
+  }
+
+  /* Fallback para navegadores que no soportan OKLCH ni Display-P3 */
+  @supports not (color: color(display-p3 0.95 0.95 0.98)) {
+    @supports not (color: oklch(0.6 0.2 90)) {
+      border-color: $header-footer-font-color;  /* Aplica un color de reserva convencional */
+    }
+  }
+}
+
+.bg-hamburger {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23240656' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-size: cover; /* Asegúrate de que se ajuste al tamaño del contenedor */
+}
+
+.text-600{
+
+     @supports (color: oklch(0.6 0.2 90)) {
+      color: $header-footer-font-color-oklch;  /* Aplica un color moderno basado en OKLCH */
+    }
+
+    /* Usar Display-P3 si OKLCH no está disponible, pero Display-P3 sí lo está */
+    @supports (color: color(display-p3 0.95 0.95 0.98)) {
+      @supports not (color: oklch(0.6 0.2 90)) {
+        color: $header-footer-font-color-display-p3;  /* Aplica un color en el espacio Display-P3 */
+      }
+    }
+
+    /* Fallback para navegadores que no soportan OKLCH ni Display-P3 */
+    @supports not (color: color(display-p3 0.95 0.95 0.98)) {
+      @supports not (color: oklch(0.6 0.2 90)) {
+        color: $header-footer-font-color;  /* Aplica un color de reserva convencional */
+      }
+    }
+}
+
+.text-form-600{
+
+
+  @supports (color: oklch(0.6 0.2 90)) {
+    color: $header-footer-background-oklch;  /* Aplica un color moderno basado en OKLCH */
+  }
+
+  /* Usar Display-P3 si OKLCH no está disponible, pero Display-P3 sí lo está */
+  @supports (color: color(display-p3 0.95 0.95 0.98)) {
+    @supports not (color: oklch(0.6 0.2 90)) {
+      color: $header-footer-background-display-p3;  /* Aplica un color en el espacio Display-P3 */
+    }
+  }
+
+  /* Fallback para navegadores que no soportan OKLCH ni Display-P3 */
+  @supports not (color: color(display-p3 0.95 0.95 0.98)) {
+    @supports not (color: oklch(0.6 0.2 90)) {
+      color: $header-footer-font-color;  /* Aplica un color de reserva convencional */
+    }
+  }
+}
+
+
+
