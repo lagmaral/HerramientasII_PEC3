@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uoc-advanced-html-css/uoc-boilerplate.git"
+    "url": "git+https://github.com/lagmaral/HerramientasII_PEC3.git"
   },
   "author": {
     "name": "Jordi Tarrida",
@@ -31,9 +31,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/uoc-advanced-html-css/uoc-boilerplate/issues"
+    "url": "hhttps://github.com/lagmaral/HerramientasII_PEC3.git/issues"
   },
-  "homepage": "https://github.com/uoc-advanced-html-css/uoc-boilerplate#readme",
+  "homepage": "https://github.com/lagmaral/HerramientasII_PEC3.git#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.12.0",
     "autoprefixer": "^10.4.20",
